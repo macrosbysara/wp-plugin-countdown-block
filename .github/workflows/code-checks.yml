@@ -11,18 +11,18 @@ concurrency:
 jobs:
     phpcs:
         if: github.event.pull_request.draft == false
-        uses: choctaw-nation/shared-github-actions/.github/workflows/phpcs.yml@main
+        uses: macrosbysara/shared-github-actions/.github/workflows/phpcs.yml@main
 
     lint-style:
         if: github.event.pull_request.draft == false
-        uses: choctaw-nation/shared-github-actions/.github/workflows/lint-if-changed.yml@main
+        uses: macrosbysara/shared-github-actions/.github/workflows/lint-if-changed.yml@main
         with:
             file_extensions: '\.(scss|css)$'
             lint_command: bun run lint:css
 
     lint-js:
         if: github.event.pull_request.draft == false
-        uses: choctaw-nation/shared-github-actions/.github/workflows/lint-if-changed.yml@main
+        uses: macrosbysara/shared-github-actions/.github/workflows/lint-if-changed.yml@main
         with:
             file_extensions: '\.(js|jsx|ts|tsx)$'
             lint_command: bun run lint:js
