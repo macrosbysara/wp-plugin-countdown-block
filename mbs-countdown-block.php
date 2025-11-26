@@ -5,7 +5,7 @@
  * Requires:          6.5.0
  * Requires at least: 6.7.0
  * Requires PHP:      8.2
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            K.J. Roelke
  * Author URI:        https://www.kjroelke.online
  * License:           GPL-3.0-or-later
