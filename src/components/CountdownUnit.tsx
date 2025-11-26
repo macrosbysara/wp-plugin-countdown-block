@@ -16,7 +16,7 @@ export default function CountdownUnit( props: CountdownUnitProps ) {
 		labelColor,
 	} = props;
 	const label =
-		'seconds' !== unitLabel && '01' === timeRemaining
+		'Seconds' !== unitLabel && '01' === timeRemaining
 			? unitLabel.slice( 0, -1 )
 			: unitLabel;
 	return (

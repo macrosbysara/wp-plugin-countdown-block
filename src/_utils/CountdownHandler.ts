@@ -126,9 +126,9 @@ export class CountdownHandler {
 
 	private createCountdownUnit( value: number, unitLabel: string ): string {
 		const label =
-		'seconds' !== unitLabel && '01' === padZero( value )
-			? unitLabel.slice( 0, -1 )
-			: unitLabel;
+			'Seconds' !== unitLabel && '01' === padZero( value )
+				? unitLabel.slice( 0, -1 )
+				: unitLabel;
 		return `
             <div class="countdown-block__unit">
                 <div class="countdown-block__number" style="color: ${ this.numberColor };">${ padZero( value ) }</div>
