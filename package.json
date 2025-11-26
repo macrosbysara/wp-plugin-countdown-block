@@ -1,0 +1,46 @@
+{
+	"name": "mbs-countdown-block",
+	"version": "1.0.0",
+	"description": "A countdown block",
+	"prettier": "@wordpress/prettier-config",
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	],
+	"files": [
+		"build/",
+		"LICENSE",
+		"CHANGELOG.md",
+		"README.md",
+		"inc/",
+		"mbs-countdown-block.php"
+	],
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --blocks-manifest --experimental-modules",
+		"format": "wp-scripts format",
+		"lint:css": "npx stylelint '**/*.scss' '**/*.css' --fix",
+		"lint:js": "npx eslint --fix",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts build --webpack-copy-php --blocks-manifest --experimental-modules && wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php --blocks-manifest --experimental-modules"
+	},
+	"author": "K.J. Roelke",
+	"license": "GPL-3.0-or-later",
+	"devDependencies": {
+		"@eslint/compat": "^2.0.0",
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.39.1",
+		"@wordpress/block-editor": "^15.8.0",
+		"@wordpress/components": "^30.8.0",
+		"@wordpress/editor": "^14.35.0",
+		"@wordpress/icons": "^11.2.0",
+		"@wordpress/scripts": "^31.0.0",
+		"eslint": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"globals": "^16.5.0",
+		"stylelint": "^16.26.0",
+		"stylelint-config-standard-scss": "^16.0.0",
+		"stylelint-scss": "^6.12.1"
+	}
+}

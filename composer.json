@@ -1,0 +1,19 @@
+{
+	"name": "macros-by-sara/countdown-block",
+	"description": "A countdown block",
+	"type": "project",
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"phpcs": "phpcs mbs-countdown-block.php inc/ --extensions=php --ignore=/build/",
+		"phpcbf": "phpcbf mbs-countdown-block.php inc/ --extensions=php --ignore=/build/"
+	},
+	"license": "GPL-3.0-or-later",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "*"
+	}
+}
